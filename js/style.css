@@ -32,6 +32,7 @@ img {
     box-shadow: 0 15px 25px black;
     width: 400px;
     height: 400px;
+    transition: 0.5s;
 }
 #left, #rigth {
     text-shadow: 0 3px 6px rgba(0, 0, 0, 0.851);

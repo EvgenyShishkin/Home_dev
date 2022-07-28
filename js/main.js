@@ -10,6 +10,9 @@ let imgArr = ["https://sun1-26.userapi.com/s/v1/if1/4bw5gTqqzVNzJlDyNDTyBXNh1lOM
 
 
 let sliderBlock = document.querySelectorAll(".slider_block img");
+let opacityIsBack = function (elem) {
+    elem.style.opacity = "1";
+}
 
 for (let i = 0;i<sliderBlock.length;i++) {
     sliderBlock[i].src = imgArr[i];
@@ -18,9 +21,13 @@ for (let i = 0;i<sliderBlock.length;i++) {
 left.addEventListener("click",()=>{
     
     imgArr.push(imgArr.shift())
+    
     for (let i = 0;i<sliderBlock.length;i++) {
+        sliderBlock[i].style.opacity = "0";
         sliderBlock[i].src = imgArr[i];
+        setTimeout(opacityIsBack(sliderBlock[i]),500);
     }
+    
     
 });
 rigth.addEventListener("click",()=>{
