@@ -1,0 +1,38 @@
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.slider_block {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    position: relative;
+    transition: 0.5s;
+    align-items: baseline;
+}
+.slider_block img+img {
+    margin-left: 40px;
+}
+.nav {
+    display: flex;
+    height: 200px;
+    width: 400px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 48px;
+    color: orangered;
+}
+.nav div {
+    cursor: pointer;
+}
+img {
+    box-shadow: 0 15px 25px black;
+    width: 400px;
+    height: 400px;
+}
+#left, #rigth {
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.851);
+}
